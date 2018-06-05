@@ -2,18 +2,13 @@
   <section class="container">
   
     <hr>
-  
+    <article class="message is-danger">
+      <div class="message-header">
+        <p>안녕하세요 <strong>김용빈</strong>을 소개하는 웹사이트입니다.</p>
+     </div>
+    </article>
+
     <div class="box">
-      <br>
-      <br>
-      <br>
-      <br>
-      
-      <h1 class="title is-4">안녕하세요 김용빈을 소개하는 웹사이트입니다.</h1>
-       <br>
-        <br>
-         <br>
-          <br>
       <article class="media">
         <div class="media-left">
           <figure class="image is-512x512">
