@@ -18,7 +18,7 @@
         <div class="media-content">
           <div class="content">
             <p>
-              <strong>이름 :</strong> <small> 김용빈</small> 
+              <strong>이름 :</strong> <small> 김용빈d</small> 
               <br>
               <strong>나이 :</strong> <small> 25</small> 
               <br> 
