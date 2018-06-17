@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <div>
-      about 패키지
+      history 페이지
     </div>
   </section>
 </template>
