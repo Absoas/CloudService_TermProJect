@@ -37,15 +37,25 @@
               <div class="tile is-parent is-vertical">
                <article class="tile is-child notification is-danger">
                 <p class="title">지금까지 배운 기술들 :</p>
-                <p class="subtitle">  1. C언어  <br><br> <a class="button is-black"  @click="ClkViceo('c')">  >C언어란? (동영상)</a></p>
-                <p class="subtitle">  2. JAVA (Android) <br><br> <a class="button is-black" @click="ClkViceo('java')" > >JAVA란? (동영상)</a> </p>
-                <p class="subtitle">  3. javascript (node.js, vue.js , nuxt.js ) <br><br> <a class="button is-black" @click="ClkViceo('js')">   >JavaScript란? (동영상)</a> </p>
+                <p class="subtitle">  1. <img src="~static/c.jpg" width="50dp" height="50dp" alt="">  C언어  <br><br>
+               
+                 <a class="button is-black"  @click="ClkViceo('c')">  >C언어란? (동영상)</a></p>
+
+                <p class="subtitle">  2. <img src="~static/java.png" width="50dp" height="50dp" alt="">  JAVA (Android) <br><br>
+                 
+                  <a class="button is-black" @click="ClkViceo('java')" > >JAVA란? (동영상)</a> </p>
+          
+                <p class="subtitle">  3.    <img src="~static/javascript.jpg" width="50dp" height="50dp" alt="">  javascript (node.js, vue.js , nuxt.js ) <br><br>
+                  <a class="button is-black" @click="ClkViceo('js')">   >JavaScript란? (동영상)</a> </p>
                </article>
        
                <article class="tile is-child notification is-warning">
                  <p class="title">관심있는 기술들 :</p>
-                 <p class="subtitle">1. C#  <br><br> <a class="button is-black"  @click="ClkViceo('c#')">  >C#이란? (동영상)</a></p>
-                 <p class="subtitle">2. Python <br><br> <a class="button is-black" @click="ClkViceo('Python')" > >Python란? (동영상)</a></p>
+                 <p class="subtitle">1.  <img src="~static/cc.png" width="50dp" height="50dp" alt="">  C#  <br><br> 
+                 <a class="button is-black"  @click="ClkViceo('c#')">  >C#이란? (동영상)</a></p>
+
+                 <p class="subtitle">2.    <img src="~static/Python.png" width="50dp" height="50dp" alt="">Python <br><br> 
+                <a class="button is-black" @click="ClkViceo('Python')" > >Python란? (동영상)</a></p>
                </article>
               </div>
            </div>
@@ -62,40 +72,51 @@
 </template>
 
 <script>
-  export default {
+export default {
   methods: {
-    ClkViceo: function (id) {
+    ClkViceo: function(id) {
+      switch (id) {
+        case "c":
+          window.open(
+            "https://www.youtube.com/embed/HNcOOzo2oU4",
+            "",
+            "width=800, height=700, toolbar=no, menubar=no, scrollbars=no, resizable=yes"
+          );
+          break;
 
-      switch(id){
-        case 'c': 
-            window.open("https://www.youtube.com/embed/HNcOOzo2oU4", "네이버새창",
-             "width=800, height=700, toolbar=no, menubar=no, scrollbars=no, resizable=yes" );  
-        break;
+        case "java":
+          window.open(
+            "https://www.youtube.com/embed/oLXiRXzhJuI",
+            "",
+            "width=800, height=700, toolbar=no, menubar=no, scrollbars=no, resizable=yes"
+          );
+          break;
 
-        case 'java':
-            window.open("https://www.youtube.com/embed/oLXiRXzhJuI", "네이버새창",
-             "width=800, height=700, toolbar=no, menubar=no, scrollbars=no, resizable=yes" );  
-        break;
+        case "js":
+          window.open(
+            "https://www.youtube.com/embed/PZIPsKgWJiw?list=PLuHgQVnccGMA4uSig3hCjl7wTDeyIeZVU",
+            "",
+            "width=800, height=700, toolbar=no, menubar=no, scrollbars=no, resizable=yes"
+          );
+          break;
 
-        case 'js':
-            window.open("https://www.youtube.com/embed/PZIPsKgWJiw?list=PLuHgQVnccGMA4uSig3hCjl7wTDeyIeZVU", "네이버새창",
-             "width=800, height=700, toolbar=no, menubar=no, scrollbars=no, resizable=yes" );  
-        break;
+        case "c#":
+          window.open(
+            "https://www.youtube.com/embed/XJdPcjs8cAw",
+            "",
+            "width=800, height=700, toolbar=no, menubar=no, scrollbars=no, resizable=yes"
+          );
+          break;
 
-        case 'c#':
-            window.open("https://www.youtube.com/embed/XJdPcjs8cAw", "네이버새창",
-             "width=800, height=700, toolbar=no, menubar=no, scrollbars=no, resizable=yes" );  
-        break;
-
-        case 'Python':
-            window.open("https://www.youtube.com/embed/XyGWW2W-wgc", "네이버새창",
-             "width=800, height=700, toolbar=no, menubar=no, scrollbars=no, resizable=yes" );  
-        break;
+        case "Python":
+          window.open(
+            "https://www.youtube.com/embed/XyGWW2W-wgc",
+            "",
+            "width=800, height=700, toolbar=no, menubar=no, scrollbars=no, resizable=yes"
+          );
+          break;
       }
- 
-       } 
     }
   }
-
-
+};
 </script>
