@@ -38,11 +38,11 @@
             <strong>지금까지 배운 기술들 :</strong>
   
             <br>
-
-            1. C언어  <br>
-            2. JAVA (Android)  <br>
-            3. javascript (node.js, vue.js , nuxt.js )  <br>
-
+            
+            1. C언어  <br> <a class="button is-primary"  @click="ClkViceo('c')">  >C언어란? (동영상)</a><br><br>
+            2. JAVA (Android) <br> <a class="button is-primary" @click="ClkViceo('java')" > >JAVA란? (동영상)</a> <br><br>
+            3. javascript (node.js, vue.js , nuxt.js ) <br><a class="button is-primary" @click="ClkViceo('js')">   >JavaScript란? (동영상)</a> <br><br>
+     
           </p>
   
           <p>
@@ -61,3 +61,32 @@
   
   </section>
 </template>
+
+<script>
+  export default {
+  methods: {
+    ClkViceo: function (id) {
+
+      switch(id){
+        case 'c': 
+            window.open("https://www.youtube.com/embed/HNcOOzo2oU4", "네이버새창",
+             "width=800, height=700, toolbar=no, menubar=no, scrollbars=no, resizable=yes" );  
+        break;
+
+        case 'java':
+            window.open("https://www.youtube.com/embed/oLXiRXzhJuI", "네이버새창",
+             "width=800, height=700, toolbar=no, menubar=no, scrollbars=no, resizable=yes" );  
+        break;
+
+        case 'js':
+            window.open("https://www.youtube.com/embed/PZIPsKgWJiw?list=PLuHgQVnccGMA4uSig3hCjl7wTDeyIeZVU", "네이버새창",
+             "width=800, height=700, toolbar=no, menubar=no, scrollbars=no, resizable=yes" );  
+        break;
+      }
+ 
+       } 
+    }
+  }
+
+
+</script>
