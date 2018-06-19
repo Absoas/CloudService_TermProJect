@@ -59,19 +59,24 @@
                </article>
               </div>
            </div>
-   
-         
-  
         </div>
-  
       </div>
   
     </div>
-  
+      <article class="message">
+            <div class="message-header">
+                점유율 현황
+            </div>
+            <div class="message-body">
+                <div id="chartArea"></div>
+            </div>
+        </article>
   </section>
 </template>
 
 <script>
+import Graph from "~/plugins/Graph";
+
 export default {
   methods: {
     ClkViceo: function(id) {
@@ -117,6 +122,9 @@ export default {
           break;
       }
     }
-  }
+  },
+    mounted() {
+            if (process.client) { Graph('chartArea'); }
+        }
 };
 </script>
