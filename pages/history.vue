@@ -35,7 +35,7 @@
   
           <div class="tile is-parent is-vertical"  style="width: 50%;">
   
-           <article class="message is-black">
+           <article class="message is-black" style="width :600px; height : 200px;">
                  <div class="message-header">상장
                  </div>
   
@@ -43,9 +43,9 @@
   
                 <label for="" class="radio" style="margin-top :5px;">
   
-                        <button  class="button is-white" type="aradio" style="margin-top :5px;" v-on:click="imageView('1')">3학년 1학기 상장 (버튼을 클릭해주세요).</button> <br>
-                        <button class="button is-white" type="aradio"  style="margin-top :5px;"  v-on:click="imageView('2')">3학년 2학기 상장 (버튼을 클릭해주세요).</button> <br>
-                        <button class="button is-white" type="aradio"  style="margin-top :5px;"  v-on:click="imageView('3')">4학년 1학기 상장 (버튼을 클릭해주세요).</button> <br>
+                        <button  class="button is-white" type="aradio" style="margin :10px;" v-on:click="imageView('1')" >3학년 1학기 상장 (버튼을 클릭해주세요).</button> <br>
+                        <button class="button is-white" type="aradio"  style="margin :10px;"  v-on:click="imageView('2')">3학년 2학기 상장 (버튼을 클릭해주세요).</button> <br>
+                        <button class="button is-white" type="aradio"  style="margin :10px;"  v-on:click="imageView('3')">4학년 1학기 상장 (버튼을 클릭해주세요).</button> <br>
   
                       </label>
   
@@ -53,25 +53,24 @@
   
             </article>
   
-            <article class="message is-black">
+            <article class="message is-black" style="width :600px; height : 300px;">
                  <div class="message-header">단기강좌
                  </div>
   
-              <button class="button is-white" type="aradio" style="margin-top :5px;" v-on:click="imageView('4')">3학년 1학기 단기강좌 (버튼을 클릭해주세요).</button> <br>
+              <button class="button is-white" type="aradio" style="margin :10px;"  v-on:click="imageView('4')">3학년 1학기 단기강좌 (버튼을 클릭해주세요).</button> <br>
   
             </article>
   
           </div>
-          <div class="tile is-parent"  style="width: 50%;">
-  
-           <article class="message is-black">
+          <div class="tile is-parent"  style="width :600px; height : 800px;">
+           <article class="message is-black" style="width :600px; height : 700px;">
                  <div class="message-header">사진
                  </div>
           
-                 <img v-if="pic1==='A'" src="~static/3-1.jpg">
-                   <img v-else-if="pic1==='B'" src="~static/3-2.png">
-                     <h1 v-else-if="pic1==='C'" class="title is-1">추후 추가 예정</h1>
-                       <img v-else-if="pic1==='D'" src="~static/certificate.jpg">
+                 <img v-if="pic1==='A'" src="~static/3-1.jpg" style="width :600px; height : 500px; margin :30px;">
+                   <img v-else-if="pic1==='B'" src="~static/3-2.png" style="width :600px; height : 500px; margin :30px;">
+                     <h1 v-else-if="pic1==='C'" class="title is-1" style="width :600px; height : 500px; margin :30px;">추후 추가 예정</h1>
+                       <img v-else-if="pic1==='D'" src="~static/certificate.jpg" style="width :600px; height : 500px; margin :30px;">
                   
             </article>
   
