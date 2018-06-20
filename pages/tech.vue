@@ -33,10 +33,11 @@
   
         <div class="content">
 
-           <div class="tile">
-              <div class="tile is-parent is-vertical">
-               <article class="tile is-child notification is-danger">
-                <p class="title">지금까지 배운 기술들 :</p>
+               <article class="message is-black">
+                 <div class="message-header">지금까지 배운 기술들 :
+                 </div>
+                 <br>
+
                 <p class="subtitle">  1. <img src="~static/c.jpg" width="50dp" height="50dp" alt="">  C언어  <br><br>
                
                  <a class="button is-black"  @click="ClkViceo('c')">  >C언어란? (동영상)</a></p>
@@ -49,8 +50,10 @@
                   <a class="button is-black" @click="ClkViceo('js')">   >JavaScript란? (동영상)</a> </p>
                </article>
        
-               <article class="tile is-child notification is-warning">
-                 <p class="title">관심있는 기술들 :</p>
+              <article class="message is-black">
+                 <div class="message-header">관심있는 기술들 :
+                 </div>
+                 <br>
                  <p class="subtitle">1.  <img src="~static/cc.png" width="50dp" height="50dp" alt="">  C#  <br><br> 
                  <a class="button is-black"  @click="ClkViceo('c#')">  >C#이란? (동영상)</a></p>
 
@@ -59,8 +62,6 @@
                </article>
               </div>
            </div>
-        </div>
-      </div>
   
     </div>
       <article class="message">

@@ -33,21 +33,19 @@
   
         <div class="tile">
   
-          <div class="tile is-parent is-vertical">
+          <div class="tile is-parent is-vertical"  style="width: 50%;">
   
-            <article class="tile is-child notification is-primary">
-  
-              <p class="title">상장</p>
+           <article class="message is-black">
+                 <div class="message-header">상장
+                 </div>
   
               <div class="control">
   
                 <label for="" class="radio" style="margin-top :5px;">
   
-                        <button  class="button is-white" type="aradio" style="margin-top :5px;" v-on:click="pic1">3학년 -1 </button> <br>
-  
-                        <button class="button is-white" type="aradio"  style="margin-top :5px;"  v-on:click="pic2">3학년 -2 </button> <br>
-  
-                        <button class="button is-white" type="aradio"  style="margin-top :5px;"  v-on:click="pic3">4학년 -1 </button> <br>
+                        <button  class="button is-white" type="aradio" style="margin-top :5px;" v-on:click="imageView('1')">3학년 1학기 상장 (버튼을 클릭해주세요).</button> <br>
+                        <button class="button is-white" type="aradio"  style="margin-top :5px;"  v-on:click="imageView('2')">3학년 2학기 상장 (버튼을 클릭해주세요).</button> <br>
+                        <button class="button is-white" type="aradio"  style="margin-top :5px;"  v-on:click="imageView('3')">4학년 1학기 상장 (버튼을 클릭해주세요).</button> <br>
   
                       </label>
   
@@ -55,26 +53,26 @@
   
             </article>
   
-            <article class="tile is-child notification is-warning">
+            <article class="message is-black">
+                 <div class="message-header">단기강좌
+                 </div>
   
-              <p class="title">단기 강좌</p>
-  
-              <button class="button is-white" type="aradio" style="margin-top :5px;">3학년 -1 </button> <br>
+              <button class="button is-white" type="aradio" style="margin-top :5px;" v-on:click="imageView('4')">3학년 1학기 단기강좌 (버튼을 클릭해주세요).</button> <br>
   
             </article>
   
           </div>
-          <div class="tile is-parent">
+          <div class="tile is-parent"  style="width: 50%;">
   
-            <article class="tile is-child notification is-info">
-  
-              <p class="title">사진 및 설명</p>
-  
-              <figure class="image is-4by3">
-                 <img v-if="pic1" src="https://bulma.io/images/placeholders/640x480.png">
-                  <img v-elseif="pic2" src="~static/logo.png">
-                   <img v-if="pic3" src="https://bulma.io/images/placeholders/640x480.png">
-              </figure>
+           <article class="message is-black">
+                 <div class="message-header">사진
+                 </div>
+          
+                 <img v-if="pic1==='A'" src="~static/3-1.jpg">
+                   <img v-else-if="pic1==='B'" src="~static/3-2.png">
+                     <h1 v-else-if="pic1==='C'" class="title is-1">추후 추가 예정</h1>
+                       <img v-else-if="pic1==='D'" src="~static/certificate.jpg">
+                  
             </article>
   
           </div>
@@ -92,10 +90,19 @@
 </template>
 <script>
 export default {
-
-    data(){
-      return {pic1:true
-      };
+  methods: {
+    imageView: function(val) {
+      if (val == "1") this.pic1 = "A";
+      else if (val == "2") this.pic1 = "B";
+      else if (val == "3") this.pic1 = "C";
+      else if (val == "4") this.pic1 = "D";
     }
-  };
+  },
+
+  data() {
+    return {
+      pic1: true
+    };
+  }
+};
 </script>
