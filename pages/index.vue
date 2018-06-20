@@ -147,8 +147,6 @@
   
               <div class="tile is-parent is-vertical">
   
-  
-  
                 <article class="message">
   
                   <div class="message-header">
