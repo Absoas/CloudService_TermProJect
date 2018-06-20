@@ -75,11 +75,11 @@
   
   
   
-          <div class="card">
+          <div class="card" style="height : 650px;">
   
             <div class="card-image">
   
-              <img src="~static/dogfoot.jpg">
+              <img src="~static/mem2.png" style="margin-top : 55px;">
   
             </div>
   
