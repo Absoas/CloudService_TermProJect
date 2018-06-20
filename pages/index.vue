@@ -159,7 +159,7 @@
   
                       <div class="message-body">
   
-                        <img src="~static/movie.jpg" alt="" style="width :400px; height : 150px;">
+                        <img src="~static/2.jpg" alt="" style="width :400px; height : 150px;">
   
                         <br> 평소 영화를 좋아합니다.
   
@@ -179,7 +179,7 @@
   
                       <div class="message-body">
   
-                        <img src="~static/music.jpg" alt="" style="width :400px; height : 150px;">
+                        <img src="~static/3.jpg" alt="" style="width :400px; height : 150px;">
   
                         <br> 스트레스를 푸는 방법 중 하나로 음악을 자주 듣는 편입니다.
   
